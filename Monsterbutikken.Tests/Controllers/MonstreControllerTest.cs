@@ -17,7 +17,7 @@ namespace Monsterbutikken.Tests.Controllers
         [TestMethod]
         public void Get()
         {
-            MonstreController controller = new MonstreController();
+            MonsterTypeController controller = new MonsterTypeController();
 
             IEnumerable<MonsterJson> result = controller.Get();
 
