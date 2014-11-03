@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Web.Http;
 
 namespace Monsterbutikken.Controllers
 {
-    public class CurrentCustomerController : ApiController
+    public class CurrentCustomerController : MonsterShopController
     {
 
         public void Post(String id)
@@ -15,7 +14,7 @@ namespace Monsterbutikken.Controllers
         {
             return new Customer
             {
-                customerName = (string) System.Web.HttpContext.Current.Session["customerName"]
+                CustomerName = (string) System.Web.HttpContext.Current.Session["customerName"]
             };
         }
 
@@ -28,6 +27,6 @@ namespace Monsterbutikken.Controllers
 
     public class Customer
     {
-        public string customerName { get; set; }
+        public string CustomerName { get; set; }
     }
 }
