@@ -1,5 +1,4 @@
-﻿using System;
-using System.Web.Http;
+﻿using System.Web.Http;
 
 namespace Monsterbutikken.Controllers
 {
@@ -7,22 +6,33 @@ namespace Monsterbutikken.Controllers
     {
         protected string GetCurrentBasketId()
         {
-            throw new NotImplementedException();
+            return (string)System.Web.HttpContext.Current.Session["basketId"];
         }
 
         protected void SetCurrentBasketId(string basketId)
         {
-            throw new NotImplementedException();
+            System.Web.HttpContext.Current.Session["basketId"] = basketId;     
         }
 
         protected string GetCurrentCustomerId()
         {
-            throw new NotImplementedException();
+            return (string) System.Web.HttpContext.Current.Session["customerName"];
         }
 
+        protected void SetCurrentCustomerId(string customerId)
+        {
+            System.Web.HttpContext.Current.Session["customerName"] = customerId;                
+        }
+
+        protected void RemoveCurrentCustomerId()
+        {
+            System.Web.HttpContext.Current.Session.Remove("customerName");
+        }
+        
         protected void RemoveCurrentBasketId()
         {
-            throw new NotImplementedException();
+            System.Web.HttpContext.Current.Session.Remove("basketId");
         }
+
     }
 }

@@ -130,12 +130,12 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\BasketController.cs" />
     <Compile Include="Controllers\CurrentCustomerController.cs" />
-    <Compile Include="InjectorConfig.cs" />
+    <Compile Include="Controllers\MonsterTypesController.cs" />
+    <Compile Include="Controllers\OrdersController.cs" />
+    <Compile Include="App_Start\InjectorConfig.cs" />
     <Compile Include="ReadLayer\basket\BasketProjection.cs" />
     <Compile Include="ReadLayer\basket\IBasketLineItemJson.cs" />
     <Compile Include="Controllers\MonsterShopController.cs" />
-    <Compile Include="Controllers\MonsterTypeController.cs" />
-    <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="ReadLayer\order\IOrderJson.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -148,24 +148,23 @@
     <Compile Include="ReadLayer\order\OrdersProjection.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\app.js" />
-    <Content Include="Views\authService.js" />
-    <Content Include="Views\basketService.js" />
-    <Content Include="img\logo.png" />
-    <Content Include="img\white_wall_hash.png" />
-    <Content Include="Views\login.html" />
-    <Content Include="Views\loginController.js" />
-    <Content Include="Views\monsterbutikken.css" />
-    <Content Include="Views\monsterButikkenControllers.js" />
-    <Content Include="Views\monsterButikkenServices.js" />
+    <Content Include="Static\app.js" />
+    <Content Include="Static\authService.js" />
+    <Content Include="Static\basketService.js" />
+    <Content Include="Static\img\logo.png" />
+    <Content Include="Static\login.html" />
+    <Content Include="Static\loginController.js" />
+    <Content Include="Static\monsterbutikken.css" />
+    <Content Include="Static\monsterButikkenControllers.js" />
+    <Content Include="Static\monsterButikkenServices.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Views\monstersService.js" />
-    <Content Include="Views\orderService.js" />
-    <Content Include="Views\serverMock.js" />
-    <Content Include="Views\shop.html" />
-    <Content Include="Views\shopControllers.js" />
-    <Content Include="Views\index.html" />
+    <Content Include="Static\monstersService.js" />
+    <Content Include="Static\orderService.js" />
+    <Content Include="Static\serverMock.js" />
+    <Content Include="Static\shop.html" />
+    <Content Include="Static\shopControllers.js" />
+    <Content Include="Static\index.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

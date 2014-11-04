@@ -3,7 +3,7 @@ using Monsterbutikken.ReadLayer.monster;
 
 namespace Monsterbutikken.Controllers
 {
-    public class MonsterTypeController : MonsterShopController
+    public class MonsterTypesController : MonsterShopController
     {
         public ICollection<MonsterTypeJson> Get()
         {

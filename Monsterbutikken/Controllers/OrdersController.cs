@@ -5,13 +5,13 @@ using Monsterbutikken.ReadLayer.order;
 
 namespace Monsterbutikken.Controllers
 {
-    public class OrderController : MonsterShopController
+    public class OrdersController : MonsterShopController
     {
         private readonly IBasketApplicationService _basketService;        
         private readonly IOrderApplicationService _orderService;
         private readonly IOrders _orders;
         
-        public OrderController(IBasketApplicationService basketService, IOrderApplicationService orderService, IOrders orders)
+        public OrdersController(IBasketApplicationService basketService, IOrderApplicationService orderService, IOrders orders)
         {
             _orderService = orderService;            
             _basketService = basketService;

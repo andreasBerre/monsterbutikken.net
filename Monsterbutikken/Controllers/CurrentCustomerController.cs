@@ -7,20 +7,20 @@ namespace Monsterbutikken.Controllers
 
         public void Post(String id)
         {
-            System.Web.HttpContext.Current.Session["customerName"] = id;
-        }
-        
+            SetCurrentCustomerId(id);
+        }  
+
         public Customer Get()
         {
             return new Customer
             {
-                CustomerName = (string) System.Web.HttpContext.Current.Session["customerName"]
+                CustomerName = GetCurrentCustomerId()
             };
         }
 
         public void Delete()
         {
-            System.Web.HttpContext.Current.Session.Remove("customerName");
+            RemoveCurrentCustomerId();
         }        
 
     }

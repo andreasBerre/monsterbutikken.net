@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Remoting.Messaging;
 
 namespace Monsterbutikken.ReadLayer.basket
 {
@@ -6,7 +8,8 @@ namespace Monsterbutikken.ReadLayer.basket
     {
         public List<IBasketLineItemJson> GetBasketLineItems(string basketId)
         {
-            throw new System.NotImplementedException();
+            //TODO: Implement this
+            return Enumerable.Empty<IBasketLineItemJson>().ToList<IBasketLineItemJson>();
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using Monsterbutikken.ReadLayer.basket;
 
 namespace Monsterbutikken.ReadLayer.order
 {
@@ -6,12 +8,14 @@ namespace Monsterbutikken.ReadLayer.order
     {
         public List<IOrderJson> GetOrders(string customerId)
         {
-            throw new System.NotImplementedException();
+            //TODO: Implement this
+            return Enumerable.Empty<IOrderJson>().ToList<IOrderJson>();
         }
 
         public IOrderJson GetOrder(string getCurrentCustomerId, string id)
         {
-            throw new System.NotImplementedException();
+            //TODO: Implement this
+            return null;
         }
     }
 }
