@@ -151,7 +151,7 @@
     <Content Include="Static\app.js" />
     <Content Include="Static\authService.js" />
     <Content Include="Static\basketService.js" />
-    <Content Include="Static\img\logo.png" />
+    <Content Include="img\logo.png" />
     <Content Include="Static\login.html" />
     <Content Include="Static\loginController.js" />
     <Content Include="Static\monsterbutikken.css" />
